@@ -1,0 +1,6 @@
+@import url('reset.css');
+@import url('header.css');
+
+/* Другие ваши стили */
+@import url('footer.css');
+@import url('sidebar.css');
