@@ -1,0 +1,81 @@
+/* Сброс отступов и базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #13131580;
+    /* светлый фон шапки */
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Логотип */
+.container img {
+    height: 50px;
+    /* высота логотипа */
+}
+
+.logo {
+    width: 104px;
+    height: 32px;
+}
+
+
+/* Меню */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    /* расстояние между пунктами меню */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    font-weight: bold;
+    color: #ffffff;
+    /* цвет при наведении */
+}
+
+/* Жирная ссылка */
+
+/* Телефон */
+.phone {
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Корректировка для тега <a> с классом phone (тип phone не используется) */
+.phone:link,
+.phone:visited {
+    color: white;
+}
+
+.phone:hover,
+.phone:active {
+    color: white;
+    text-decoration: underline;
+}
