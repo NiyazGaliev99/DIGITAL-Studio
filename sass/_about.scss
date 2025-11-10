@@ -1,21 +1,18 @@
 .about {
   position: relative;
   backdrop-filter: blur(4px);
-  padding: 111px 0 32px 0;
+  padding-top: 111px;
+  padding-bottom: 32px;
   background: #AE9C9C40;
-  color: #ffffff;
-/*   background-image: url(..//images/Rectangle.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
+  color: $primery-red;
 
   @media screen and (max-width:768px) {
-    padding: 81px 0 64px 0;
-/*     background-image: url(..//images/Rectangle1.jpg); */
+    padding-top: 81px;
+    padding-bottom: 64px;
   }
 
   @media screen and (max-width:384px) {
-    padding: 86px 0 64px 0;
-/*   background-image: url(..//images/Rectangle2.jpg); */
+    padding-top: 86px;
   }
 
   &__icon {
@@ -26,6 +23,11 @@
 
     @media screen and (max-width:768px) {
       bottom: 131px;
+      left: auto;
+    }
+    
+    @media screen and (max-width:384px) {
+      bottom: 243px;
       left: auto;
     }
   }
@@ -72,7 +74,7 @@
     &-title {
       font-size: 48px;
       font-weight: 300;
-      color: #ffffff;
+      color: $primery-red;
       letter-spacing: 0.2em;
 
       @media screen and (max-width:768px) {

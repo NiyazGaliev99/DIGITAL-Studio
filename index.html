@@ -35,21 +35,29 @@
         <main class="container main">
             <div class="main__inform">
                 <div class="main__inform-line"></div>
-                <img class="main__inform-preview" src="/images/astronaut.png" alt="">
+
+                <picture class="main__inform-preview">
+                    <source srcset="/images/astronaut2.png" media="(max-width: 384px)">
+                    <source srcset="/images/astronaut1.png" media="(max-width: 768px)">
+                    <img src="/images/astronaut.png" alt="Абстрактное изображение">
+                </picture>
+
                 <div class="main__inform-wrap">
                     <h1 class="main__inform-title">DIGITAL-СТУДИЯ </h1>
                     <h2 class="main__inform-subtitle">RION</h2>
                 </div>
-
             </div>
-
             <p class="main__description">Используйте эффективные инструменты</p>
             <p class="main__data">2024 © </p>
         </main>
 
         <section class="about">
             <div class="container">
-                <img class="about__icon" src="/images/shatl.png" alt="">
+                <picture class="about__icon">
+                    <source srcset="/images/shat2.png" media="(max-width: 384px)">
+                    <source srcset="/images/shatl.png" media="(max-width: 768px)">
+                    <img src="/images/shatl.png" alt="Абстрактное изображение">
+                </picture>
 
                 <div class="about__headline">
                     <img class="about__headline-logo" src="/images/Logo.svg" alt="">
@@ -85,10 +93,10 @@
         </section>
 
         <section class=" container advantages">
-            <div class="advantages__headline">
-                <h3 class="advantages__headline-caption">Наши преимущества</h3>
-                <div class="advantages__headline-line"></div>
-            </div>
+            <header class="section-header">
+                <h2 class="section-header__title">Наши преимущества</h2>
+                <div class="section-header__line"></div>
+            </header>
 
             <div class="advantages__row">
                 <div class="advantages__row-coll">
@@ -123,10 +131,11 @@
     </div>
 
     <section class="container integration">
-        <div class="integration__headline">
-            <div class="integration__headline-line"></div>
-            <h3 class="integration__headline-caption">Интеграция с сервисами</h3>
-        </div>
+        <header class="section-header section-header_reverse-dark">
+            <h2 class="section-header__title">Интеграция с сервисами</h2>
+            <div class="section-header__line"></div>
+        </header>
+
         <div class="integration__service">
             <img class="integration__service-logo" src="/images/service1.svg" alt="">
             <img class="integration__service-logo" src="/images/service2.svg" alt="">
@@ -139,10 +148,10 @@
 
     <div class="sectionBG">
         <section class="container teams">
-            <div class="teams__headline">
-                <h3 class="teams__headline-caption">команда</h3>
-                <div class="teams__headline-line"></div>
-            </div>
+            <header class="section-header">
+                <h2 class="section-header__title">команда</h2>
+                <div class="section-header__line"></div>
+            </header>
 
             <div class="teams__row">
                 <div class="teams__row-coll">
@@ -167,7 +176,97 @@
             </div>
         </section>
 
+        <section class="feedback">
+            <div class="container">
+                <header class="section-header section-header_reverse">
+                    <h2 class="section-header__title">Обратная связь</h2>
+                    <div class="section-header__line"></div>
+                </header>
+
+                <form action="" class="form">
+                    <div class="form__values">
+                        <div class="form__item">
+                            <label for="name" class="form__item-name">ФИО*</label>
+                            <input type="text" class="form__item-input" id="name">
+                        </div>
+
+                        <div class="form__item">
+                            <label for="surname" class="form__item-name">Комментарий*</label>
+                            <input type="text" class="form__item-input" id="surname">
+                        </div>
+
+                        <div class="form__item">
+                            <label for="tel" class="form__item-name">Номер телефона*</label>
+                            <input type="number" class="form__item-input" id="tel">
+                        </div>
+                    </div>
+
+                    <label for="check" class="form__item-check">
+                        <input type="checkbox" id="check">
+                        Cогласен на обработку персональных данных. Ознакомлен с <a class="form__item-link"
+                            href="">политикой конфиденциальности.</a>
+                    </label>
+
+                    <button class="form__item-submit">
+                        Перезвонить
+                    </button>
+                </form>
+            </div>
+
+            <picture>
+                <source srcset="/images/sputnik2.png" media="(max-width: 384px)">
+                <source srcset="/images/sputnik1.png" media="(max-width: 768px)">
+                <img class="feedback__sputnik" src="/images/sputnik.png" alt="Абстрактное изображение">
+            </picture>
+
+            <div class="feedback__wrapper"></div>
+        </section>
+
+        <section></section>
     </div>
+
+    <section class="container portfolio">
+
+        <header class="section-header section-header_reverse-dark">
+            <h2 class="section-header__title">Портфолио</h2>
+            <div class="section-header__line"></div>
+        </header>
+
+        <div class="portfolio__content">
+            <div class="portfolio__content-headline">
+                <h3>Сайт бренда обуви ELKLAND</h3>
+            </div>
+
+            <div class="portfolio__content-title">
+                <p class="portfolio__content-item">
+                    <span>Мы разработали сайт для презентации моделей обуви бренда ELKLAND. У пользователя есть
+                        возможность не только ознакомиться с актуальным каталогом, но и оставить заявку на оптовый заказ
+                        или дилерство.</span>
+                </p>
+
+                <p class="portfolio__content-item">
+                    <span>Backend:</span> Laravel, PHP
+                </p>
+
+                <p class="portfolio__content-item">
+                    <span>Frontend:</span>HTML5, SCSS, JavaScrip
+                </p>
+
+                <p class="portfolio__content-item">
+                    <span>UX/UI:</span>Adobe XD
+                </p>
+            </div>
+
+            <div class="portfolio__content-preview">
+                <picture>
+                    <source srcset="/images/portfolio2.png" media="(max-width: 384px)">
+                    <source srcset="/images/portfolio1.png" media="(max-width: 768px)">
+                    <img src="/images/portfolio.png" alt="Абстрактное изображение">
+                </picture>
+            </div>
+
+        </div>
+    </section>
 </body>
 
 </html>

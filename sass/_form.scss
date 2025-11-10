@@ -1,0 +1,129 @@
+.feedback {
+  position: relative;
+  padding-top: 137px;
+  padding-bottom: 128px;
+  color: #ffffff;
+  font-size: 20px;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__sputnik {
+    position: absolute;
+    right: 0;
+    top: -258px;
+
+    @media screen and (max-width:768px) {
+      top: -185px;
+    }
+
+    @media screen and (max-width:384px) {
+      top: -120px;
+    }
+  }
+
+  .form {
+    padding-top: 68px;
+
+    &__values {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px 0px;
+      margin-bottom: 32px;
+    }
+  
+    &__item {
+      display: flex;
+      flex-direction: column;
+      width: 49%;
+
+      &:nth-child(1) {
+        @media screen and (max-width:768px) {
+          order: 1;
+        }
+
+        @media screen and (max-width:384px) {
+          order: 1;
+          width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        @media screen and (max-width:768px) {
+          order: 3;
+          width: 100%;
+        }
+
+        @media screen and (max-width:384px) {
+          order: 2;
+          width: 100%;
+        }
+      }
+
+      &:nth-child(3) {
+        @media screen and (max-width:768px) {
+          order: 2;
+        }
+
+        @media screen and (max-width:384px) {
+          order: 3;
+          width: 100%;
+        }
+      }
+
+      &-name {
+        padding: 16px 0 0 16px
+      }
+  
+      &-input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 4px solid #ffffff;
+        height: 48px;
+        color: #ffffff;
+        font-size: 25px;
+      }
+  
+      &-check {
+        display: block;
+        margin-bottom: 32px;
+      }
+  
+      &-link {
+        text-decoration: underline;
+        color: #ffffff;
+      }
+  
+      &-submit {
+        display: block;
+        margin: 0 auto;
+        width: 584px;
+        height: 48px;
+        color: #ffffff;
+        background-color: #7758B7;
+
+        @media screen and (max-width:768px) {
+          width: 704px;
+        }
+
+        @media screen and (max-width:384px) {
+          width: 352px;
+        }
+      }
+    }
+    
+  }
+
+  &__wrapper {
+    position: absolute;
+    background: #00000080;
+    backdrop-filter: blur (5px);
+    inset: 0;
+  }
+}
+
+
+
