@@ -100,17 +100,17 @@
       &-submit {
         display: block;
         margin: 0 auto;
-        width: 584px;
+        width: 50%;
         height: 48px;
         color: #ffffff;
         background-color: #7758B7;
 
         @media screen and (max-width:768px) {
-          width: 704px;
+          width: 90%;
         }
 
         @media screen and (max-width:384px) {
-          width: 352px;
+
         }
       }
     }
