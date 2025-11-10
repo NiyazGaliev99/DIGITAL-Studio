@@ -1,7 +1,336 @@
-@import url('reset.css');
-@import url('basic.css');
-@import url('header.css');
+@charset "UTF-8";
 
-/* Другие ваши стили */
-@import url('footer.css');
-@import url('sidebar.css');
+.main-BG {
+    background-image: url(../images/MainBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(19, 19, 21, 0.5019607843);
+    padding: 16px 0px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__link-item {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.header__link-item:hover {
+    font-size: 20px;
+}
+
+.link-phone {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.main {
+    padding: 80px 0 32px 0;
+}
+
+.main__inform {
+    display: flex;
+    align-items: center;
+}
+
+.main__inform-line {
+    position: relative;
+    top: -65px;
+    width: 317px;
+    border-top: 1px solid #ffffff;
+}
+
+.main__inform-wrap {
+    display: block;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.main__inform-title {
+    font-weight: 300;
+}
+
+.main__inform-subtitle {
+    font-size: 104px;
+    font-weight: 400;
+}
+
+.main__description {
+    width: 199px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.main__data {
+    text-align: right;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    padding: 111px 0 32px 0;
+    background: rgba(174, 156, 156, 0.2509803922);
+    background-image: url(..//images/Rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__headline {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.about__headline-logo {
+    height: 90px;
+}
+
+.about__headline-line {
+    position: relative;
+    width: 223px;
+    border-top: 1px solid #ffffff;
+}
+
+.about__headline-title {
+    font-size: 48px;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 594px;
+    margin-left: auto;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.about__content-first {
+    font-size: 30px;
+}
+
+.about__content-second {
+    font-size: 20px;
+}
+
+.about__content-third {
+    font-size: 20px;
+}
+
+.about__content-data {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.advantages {
+    padding: 128px 0 64px 0;
+}
+
+.advantages__headline {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.advantages__headline-caption {
+    font-size: 26x;
+    /* 28px уходит на новую строчку */
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.advantages__headline-line {
+    position: relative;
+    width: 745px;
+    border-top: 1px solid #ffffff;
+}
+
+.advantages__row {
+    -moz-column-count: 4;
+    column-count: 4;
+    color: #ffffff;
+}
+
+.advantages__row-coll {
+    padding-top: 68px;
+}
+
+.advantages__row-title {
+    font-size: 32px;
+    padding-bottom: 32px;
+}
+
+.advantages__row-text {
+    font-size: 20px;
+    display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

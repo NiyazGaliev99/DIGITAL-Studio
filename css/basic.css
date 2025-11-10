@@ -1,6 +1,12 @@
-.main1 {
-    background-image: url(../Background.png);
+.main-BG {
+    background-image: url(../images/MainBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*# sourceMappingURL=base.css.map */
