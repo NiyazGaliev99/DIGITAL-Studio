@@ -1,0 +1,83 @@
+.integration {
+  padding: 137px 0 128px 0;
+  background-color: #ffffff;
+
+  @media screen and (max-width:768px) {
+    padding: 86px 0 81px 0;
+  }
+
+  @media screen and (max-width:384px) {
+    padding: 86px 0 48px 0;
+
+  }
+  
+  &__headline {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    @media screen and (max-width:768px) {
+      gap: 24px;
+   }
+
+    @media screen and (max-width:384px) {
+      flex-direction: column;
+   }
+
+    &-line {
+      position: relative;
+      width: 657px; 
+      border-top: 1px solid #000000;
+
+      @media screen and (max-width:768px) {
+        width: 323px; 
+     }
+     @media screen and (max-width:384px) {
+      width: 172px; 
+      margin: auto;
+     }
+    }
+
+    &-caption {
+      font-size: 26px; 
+      font-weight: 300;
+      color: #000000;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      @media screen and (max-width:768px) {
+        font-size: 21px;
+      }
+
+      @media screen and (max-width:384px) {
+        text-align: center;
+        order: -1;
+      }
+    }
+  }
+    
+  &__service {
+    display: flex;
+    padding-top: 68px;
+    gap: 12px;
+
+    @media screen and (max-width:768px) {
+      padding-top: 48px;
+      gap: 21px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @media screen and (max-width:384px) {
+      gap: 8px;
+    }
+
+    &-logo {
+  
+      @media screen and (max-width:384px) {
+        height: 100px;
+        width: 172px;
+      }
+    }
+  }
+}

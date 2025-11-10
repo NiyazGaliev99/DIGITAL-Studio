@@ -1,0 +1,139 @@
+.about {
+  position: relative;
+  backdrop-filter: blur(4px);
+  padding: 111px 0 32px 0;
+  background: #AE9C9C40;
+  color: #ffffff;
+/*   background-image: url(..//images/Rectangle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  @media screen and (max-width:768px) {
+    padding: 81px 0 64px 0;
+/*     background-image: url(..//images/Rectangle1.jpg); */
+  }
+
+  @media screen and (max-width:384px) {
+    padding: 86px 0 64px 0;
+/*   background-image: url(..//images/Rectangle2.jpg); */
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 74px;
+    left: 45px;
+    filter: blur(5px);
+
+    @media screen and (max-width:768px) {
+      bottom: 131px;
+      left: auto;
+    }
+  }
+
+  &__headline { 
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 15px;
+
+    @media screen and (max-width:384px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+
+    &-logo {
+      height: 90px;
+
+      @media screen and (max-width:768px) {
+        height: 48px;
+      }
+
+      @media screen and (max-width:384px) {
+        display: none;
+      }
+    }
+
+    &-line {
+      height: 1px;
+      width: 223px; 
+      background-color: #ffffff;
+/*       border-top: 1px solid #ffffff; */
+
+      @media screen and (max-width:768px) {
+        width: 160px; 
+      }
+
+     @media screen and (max-width:384px) {
+      width: 172px;
+      }
+   }
+
+    &-title {
+      font-size: 48px;
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: 0.2em;
+
+      @media screen and (max-width:768px) {
+        font-size: 28px;
+      }
+     
+     @media screen and (max-width:384px) {
+      align-items: center;
+      order: -1;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    max-width: 594px;
+    margin-left: auto;
+
+    @media screen and (max-width:768px) {
+      max-width: 519px;
+    }
+
+    @media screen and (max-width:384px) {
+      min-width: 352px;
+      text-align: center;
+    }
+
+    &-item {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      line-height: 1.2;
+
+      @media screen and (max-width:768px) {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+
+      &:first-child {
+        font-size: 30px;
+        line-height: 1.4;
+
+        @media screen and (max-width:768px) {
+          font-size: 24px;
+        }
+      }
+  
+      &:last-child {
+        margin-top: 68px;
+        text-align: right;
+
+        @media screen and (max-width:768px) {
+          margin-top: 24px;
+          text-align: left;
+        }
+
+        @media screen and (max-width:768px) {
+          display: none;
+        }
+      }
+    }   
+  }
+}

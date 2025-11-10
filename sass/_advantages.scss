@@ -1,0 +1,119 @@
+.advantages {
+  padding: 128px 0 64px 0;
+
+  @media screen and (max-width:768px) {
+    padding: 86px 0 64px 0;
+ }
+
+ @media screen and (max-width:384px) {
+  padding: 86px 0 48px 0;
+}
+
+  
+  &__headline {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    @media screen and (max-width:768px) {
+      gap: 24px;
+   }
+   
+    @media screen and (max-width:384px) {
+     flex-direction: column;
+   }
+
+    &-caption {
+      font-size: 26px; 
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      @media screen and (max-width:768px) {
+        font-size: 21px;
+     }
+
+     @media screen and (max-width:384px) {
+      align-items: center;
+
+   }
+    }
+  
+    &-line {
+      position: relative;
+      width: 745px; 
+      border-top: 1px solid #ffffff;
+
+      @media screen and (max-width:768px) {
+        width: 392px; 
+        margin-left: auto;
+     }
+
+     @media screen and (max-width:384px) {
+      width: 172px;
+      margin: auto;
+      }
+   }
+    }
+
+  &__row {
+    color: #ffffff;
+    display: flex;
+    align-items: first baseline;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width:768px) {
+      flex-wrap: wrap;
+
+   }
+   
+    @media screen and (max-width:384px) {
+     flex-direction: column;
+     text-align: center;
+   }
+
+    &-coll {
+      padding-top: 68px;
+
+      @media screen and (max-width:768px) {
+        padding-top: 48px; 
+        width: 344px;
+     }
+
+     @media screen and (max-width:384px) {
+      padding-top: 24px; 
+     }
+    }
+
+    &-title {
+      font-size: 32px;
+      padding-bottom: 70px; 
+
+      @media screen and (max-width:768px) {
+        font-size: 24px;
+        padding-bottom: 24px; 
+     }
+
+     @media screen and (max-width:384px) {
+
+     }
+    }
+
+    &-text {
+      font-size: 20px;
+      display: inline-block;
+
+      @media screen and (max-width:768px) {
+        font-size: 18px;
+     }
+
+     @media screen and (max-width:384px) {
+
+     }
+    }
+
+  }
+
+}
+ 

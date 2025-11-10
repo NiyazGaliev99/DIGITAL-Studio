@@ -1,0 +1,52 @@
+.header {
+  background: #13131580;
+  padding: 16px 0px;
+
+  @media screen and (max-width:768px) {
+    background: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &-item {
+      color: #FFFFFF;
+      transition: 0.5s;
+
+      &:hover {
+        font-size: 20px;
+      }
+    }
+   
+  @media screen and (max-width:768px) {
+    display: none;
+  }
+}
+
+&__phone {
+  color: #FFFFFF;
+  font-weight: 500;
+
+  @media screen and (max-width:768px) {
+    display: none;
+  }
+}
+
+ &__hamburger {
+  display: none;
+  @media screen and (max-width:768px) {
+    display: block;
+  }
+}   
+}

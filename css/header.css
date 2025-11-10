@@ -1,29 +1,29 @@
 .header {
-    background: rgba(19, 19, 21, 0.5019607843);
-    padding: 16px 0px;
+  background: rgba(19, 19, 21, 0.5019607843);
+  padding: 16px 0px;
 }
 
 .header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FFFFFF;
-    font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 12px;
 }
 
 .header__list ul {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header__list ul li:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .link-phone {
-    color: #FFFFFF;
-    font-weight: 500;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=header.css.map */
