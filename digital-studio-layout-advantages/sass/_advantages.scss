@@ -1,0 +1,44 @@
+.advantages {
+  padding: 128px 0 64px 0;
+  
+  &__headline {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    &-caption {
+      font-size: 26x; /* 28px уходит на новую строчку */
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  
+    &-line {
+      position: relative;
+      width: 745px; 
+      border-top: 1px solid #ffffff;
+    }
+  }
+
+  &__row {
+    column-count: 4;
+    color: #ffffff;
+
+    &-coll {
+      padding-top: 68px;
+    }
+
+    &-title {
+      font-size: 32px;
+      padding-bottom: 32px; 
+    }
+
+    &-text {
+      font-size: 20px;
+      display: inline-block;
+    }
+
+  }
+}
+ 

@@ -1,0 +1,27 @@
+.header {
+  background: #13131580;
+  padding: 16px 0px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.header__list ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__list ul li:hover {
+  transform: scale(1.2);
+}
+ 
+.link-phone {
+  color: #FFFFFF;
+  font-weight: 500;
+}
